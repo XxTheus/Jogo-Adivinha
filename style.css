@@ -2,8 +2,36 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: aliceblue;
+    text-shadow: 2px 2px 8px #000000;
 }
 
 .input_Numero {
     font-style: italic;
+}
+
+body {
+    background-color: #121214;
+}
+
+.foto {
+    position: top center;
+    background-size: 30% auto;
+    background-repeat: no-repeat;
+}
+
+div {
+    text-align: center;
+}
+
+.comecar {
+    color: #000000;
+}
+
+.chute {
+    color: #000000;
+}
+
+.play_again {
+    color: #000000;
 }
