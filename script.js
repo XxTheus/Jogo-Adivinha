@@ -50,5 +50,4 @@ btn_reiniciar.onclick = () => {
     acertou.style.display = 'none';
     texto1.style.display = 'block';
     texto2.style.display = 'none';
-
 }
