@@ -15,6 +15,7 @@ btn_comecar.onclick = () => {
     texto1.style.display = 'none';
     texto2.style.display = 'block';
     acertou.style.display = 'none';
+    btn_reiniciar.style.display = 'none';
 
     numero = Math.floor(Math.random() * 100)
     
