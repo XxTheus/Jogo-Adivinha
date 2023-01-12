@@ -3,21 +3,57 @@
     padding: 0;
     box-sizing: border-box;
     color: aliceblue;
-    text-shadow: 2px 2px 8px #000000;
-}
-
-.input_Numero {
-    font-style: italic;
 }
 
 body {
     background-color: #121214;
 }
 
+.input_Numero {
+    font-family: 'Nerko One', sans-serif;
+    font-size: 15px;
+    font-style: italic;
+    color: #000000;
+    background-color: aliceblue;
+    border-radius: 12px;
+    padding: 5px;
+    width: 250px;
+}
+
+#texto {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 16px;
+    margin: 10px;
+    margin-top: 5px;
+    padding-bottom: 20px;
+}
+
+#chute {
+    font-family: 'Zen Dots', sans-serif;
+    color: #2e2e2e;
+    padding: 5px;
+    cursor: pointer;
+}
+
+#play_again {
+    font-family: 'Zen Dots', sans-serif;
+    color: #2e2e2e;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.top_text {
+    font-family: 'Zen Dots', sans-serif;
+    font-size: 18px;
+    margin: 10px;
+    margin-top: 55px;
+}
+
 .foto {
     position: top center;
     background-size: 30% auto;
     background-repeat: no-repeat;
+    margin-top: 40px;
 }
 
 div {
@@ -25,13 +61,42 @@ div {
 }
 
 .comecar {
-    color: #000000;
+    font-family: 'Nerko One', sans-serif;
+    font-size: 20px;
+    color: #2e2e2e;
+    background-color: aliceblue;
+    border-radius: 20px;
+    padding: 5px;
+    width: 200px;
+    margin: auto;
+    margin-top: 15px;
+    box-shadow: 5px 5px 10px rgba(32, 32, 32, 0.400);
+    border: none;
+        --border-width: 3px;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        background: white;
+        border-radius: var(--border-width);
 }
 
-.chute {
-    color: #000000;
+.comecar::after {
+    position: absolute;
+        content: "";
+        top: calc(-1 * var(--border-width));
+        left: calc(-1 * var(--border-width));
+        z-index: -1;
+        width: calc(100% + var(--border-width) * 2);
+        height: calc(100% + var(--border-width) * 2);
+        background: linear-gradient(60deg, #5f86f2, #a65ff2, #f25fd0, #f25f61, #f2cb5f, #abf25f, #5ff281, #5ff2f0);
+        background-size: 300% 300%;
+        background-position: 0 50%;
+        border-radius: calc(2 * var(--border-width));
+        animation: moveGradient 5s alternate infinite;
 }
-
-.play_again {
-    color: #000000;
-}
+@keyframes moveGradient {
+    50% {
+      background-position: 100% 50%;
+    }
+  }
